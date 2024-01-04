@@ -1,10 +1,28 @@
 /* import font for whole app */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans+Syriac+Eastern&display=swap');
 
-/* add Add the Tailwind CSS directives */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@media (min-width: 768px) {
+    .nav {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .nav {
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .nav {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+  
 
 /* full-page background gradient container */
 .main {
@@ -19,12 +37,16 @@
 }
 
 .app {
-    /* higher than the stacking order of .main (which has z-index: 1), so .app will be visually positioned above .main */
-    @apply relative z-10 md:px-24 lg:px-44 2xl:px-80;
+    position: relative;
+    z-index: 10;
 }
-/* Tailwind Styles */
-@layer components {
-    .nav {
-        @apply flex items-center p-1 space-x-4 h-14 w-screen font-lora font-extrabold font-bold;
-    }
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    height: 56px; 
+    font-family: 'Lora', serif;
+    font-weight: 800; 
+    font-weight: bold;
 }
