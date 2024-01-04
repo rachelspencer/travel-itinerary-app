@@ -10,7 +10,7 @@ const Nav = () => {
                 height={60}
                 className="object-contain"
             />
-        <p className='flex items-center'>A Scotland Travel Itinerary</p> 
+        <p>A Scotland Travel Itinerary</p> 
         </nav>
     )
 }

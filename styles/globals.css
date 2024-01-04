@@ -15,17 +15,16 @@
     pointer-events: none;
     /* sets the stacking order. It's higher than the default stacking order, which is useful if you have other positioned elements */
     z-index: 1;
-    /* positions the element relative to its nearest positioned ancestor (if any), or the initial containing block otherwise */
-    position: absolute;
+    position: fixed;
 }
 
 .app {
     /* higher than the stacking order of .main (which has z-index: 1), so .app will be visually positioned above .main */
-    @apply relative z-10 px-24;
+    @apply relative z-10 md:px-24 lg:px-44 2xl:px-80;
 }
 /* Tailwind Styles */
 @layer components {
     .nav {
-        @apply flex p-1 space-x-4 h-14 w-screen;
+        @apply flex items-center p-1 space-x-4 h-14 w-screen font-lora font-extrabold font-bold;
     }
 }
