@@ -2,27 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans+Syriac+Eastern&display=swap');
 
 
-@media (min-width: 768px) {
-    .nav {
-      padding-left: 24px;
-      padding-right: 24px;
-    }
-  }
+
   
-  @media (min-width: 1024px) {
-    .nav {
-      padding-left: 44px;
-      padding-right: 44px;
-    }
+
+  .body {
+    margin: 0;
   }
-  
-  @media (min-width: 1536px) {
-    .nav {
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-  }
-  
 
 /* full-page background gradient container */
 .main {
@@ -50,3 +35,37 @@
     font-weight: 800; 
     font-weight: bold;
 }
+/* XS- Mobile devices and small tablets */
+@media (min-width: 576px) {
+    .app {
+        padding: 0px 50px
+    }
+    .nav {
+        align-content: space-between;
+    }
+  }
+
+/* SM - Tablets and small laptops */
+@media (min-width: 768px) {
+    .app {
+        padding: 0px 100px
+    }
+  }
+  /* MD -  Larger tablets and laptops */
+  @media (min-width: 992px) {
+    .app {
+      padding: 0px 160px;
+    }
+  }
+  /* LG - Standard desktop monitors */
+  @media (min-width: 1200px) {
+    .app {
+      padding: 0px 180px;
+    }
+  }
+  /* XL - Large desktop monitors)*/
+  @media (min-width: 1200px) {
+    .app {
+      padding: 0px 250px;
+    }
+  }

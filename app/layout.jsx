@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 export default function RootLayout({ children }) {
     return (
       <html lang='en'>
-        <body>
+        <body className='body'>
           <div className='main'></div>
           <main className='app'>
             <Nav/>
