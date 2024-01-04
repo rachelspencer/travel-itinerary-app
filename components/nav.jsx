@@ -10,7 +10,7 @@ const Nav = () => {
                 height={60}
                 className="object-contain"
             />
-        <p>A Scotland Travel Itinerary</p> 
+            <p className='header-text'>A Scotland Travel Itinerary</p> 
         </nav>
     )
 }

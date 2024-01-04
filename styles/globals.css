@@ -1,13 +1,9 @@
 /* import font for whole app */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans+Syriac+Eastern&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-
-
-  
-
-  .body {
-    margin: 0;
-  }
+.body {
+margin: 0;
+}
 
 /* full-page background gradient container */
 .main {
@@ -24,48 +20,29 @@
 .app {
     position: relative;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 24px 160px 24px;
+
 }
+
+@media screen and (max-width: 640px) {
+    .app {
+      padding-top: 24px;
+    }
+  }
 
 .nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 4px;
-    height: 56px; 
-    font-family: 'Lora', serif;
-    font-weight: 800; 
-    font-weight: bold;
+    font-weight: 700;
 }
-/* XS- Mobile devices and small tablets */
-@media (min-width: 576px) {
-    .app {
-        padding: 0px 50px
-    }
-    .nav {
-        align-content: space-between;
-    }
-  }
 
-/* SM - Tablets and small laptops */
-@media (min-width: 768px) {
-    .app {
-        padding: 0px 100px
-    }
-  }
-  /* MD -  Larger tablets and laptops */
-  @media (min-width: 992px) {
-    .app {
-      padding: 0px 160px;
-    }
-  }
-  /* LG - Standard desktop monitors */
-  @media (min-width: 1200px) {
-    .app {
-      padding: 0px 180px;
-    }
-  }
-  /* XL - Large desktop monitors)*/
-  @media (min-width: 1200px) {
-    .app {
-      padding: 0px 250px;
-    }
-  }
+.header-text {
+    margin-left: 12px;
+}
+
