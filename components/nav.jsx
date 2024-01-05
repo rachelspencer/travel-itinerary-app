@@ -13,6 +13,6 @@ const Nav = () => {
             <p className='header-text'>A Scotland Travel Itinerary</p> 
         </nav>
     )
-}
+};
 
 export default Nav;

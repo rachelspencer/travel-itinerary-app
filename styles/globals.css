@@ -44,5 +44,19 @@ margin: 0;
 
 .header-text {
     margin-left: 12px;
+    flex: 1 1 auto;
 }
+
+@media screen and (max-width: 640px) {
+    .intro-h1 {
+        text-align: center;
+    }
+}
+
+.day-card {
+    display: flex;
+    align-items: center;
+    
+}
+
 
