@@ -1,11 +1,15 @@
-import Form from "../components/Form"
-import Feed from "../components/Feed"
+import DayForm from '../components/DayForm';
+import Feed from '../components/Feed';
 
 export default function Page() {
     return (
       <div>
-        <h1 className='intro-h1' >So you are going to Scotland eh?</h1>
-        <Form/>
+        <div className='intro-text'>
+          <h1>So you are going to Scotland eh?</h1>
+          <h2>Create your itinerary here!</h2>
+        </div>
+        
+        <DayForm/>
         <Feed/>
       </div>
     )

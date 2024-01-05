@@ -47,16 +47,50 @@ margin: 0;
     flex: 1 1 auto;
 }
 
-@media screen and (max-width: 640px) {
-    .intro-h1 {
-        text-align: center;
-    }
+
+.intro-text {
+    text-align: center;
 }
+
+/* Day Form Styling*/
+.day-form {
+    display: flex;
+}
+
+.day-form-input {
+    flex: min-content;
+    margin: 3% 0;
+    padding: 3%;
+    border-radius: 30px;
+    border: 2px  solid black;
+    box-sizing: border-box;
+}
+
+.day-form-btn {
+    flex: min-content;
+    margin: 3% 0;
+    padding: 3%;
+    border-radius: 30px;
+    border: 2px  solid black;
+    box-sizing: border-box;
+    
+}
+
+@media screen and (max-width: 640px) {
+    .day-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .day-form-btn {
+        align-self: center;
+        width: calc(100% / 3);
+    }
+  }
 
 .day-card {
     display: flex;
     align-items: center;
-    
 }
 
 
