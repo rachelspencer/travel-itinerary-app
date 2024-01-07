@@ -1,4 +1,5 @@
 /* import font for whole app */
+@import 'base-styles';
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 .body {
@@ -24,15 +25,8 @@ margin: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 120px 24px 160px 24px;
-
+    padding:0px 24px;
 }
-
-@media screen and (max-width: 640px) {
-    .app {
-      padding-top: 24px;
-    }
-  }
 
 .nav {
     display: flex;
@@ -55,42 +49,28 @@ margin: 0;
 /* Day Form Styling*/
 .day-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .day-form-input {
-    flex: min-content;
-    margin: 3% 0;
-    padding: 3%;
-    border-radius: 30px;
-    border: 2px  solid black;
-    box-sizing: border-box;
+    @extend .btn-input-base-styling;
 }
 
 .day-form-btn {
-    flex: min-content;
-    margin: 3% 0;
-    padding: 3%;
-    border-radius: 30px;
-    border: 2px  solid black;
-    box-sizing: border-box;
-    
+    @extend .btn-input-base-styling;
+    width: calc(100% / 3);
 }
 
-@media screen and (max-width: 640px) {
-    .day-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .day-form-btn {
-        align-self: center;
-        width: calc(100% / 3);
-    }
-  }
+// @media screen and (max-width: 640px) {
+//     .day-form {
+//         display: flex;
+//         flex-direction: column;
+//     }
+//   }
 
 .day-card {
     display: flex;
-    align-items: center;
 }
 
 

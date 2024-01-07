@@ -1,5 +1,5 @@
 // import css stylesheet to apply the styles to every route in the application.
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 import Nav from '../components/Nav';
 

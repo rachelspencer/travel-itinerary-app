@@ -1,7 +1,7 @@
 const DayForm = () => {
     return(
         <form className="day-form">
-            <label for='days'>How many days is your itinerary?</label>
+            <label className="day-form" for='days'>How many days is your itinerary?</label>
             <input className='day-form-input'
                 type='number' 
                 id='days' 
@@ -10,7 +10,7 @@ const DayForm = () => {
                 max='40'
                 placeholder='enter a number'
                 ></input>
-                <button className='day-form-btn'>Go!</button>
+            <button className='day-form-btn'>Go!</button>
         </form>
     )
 };
