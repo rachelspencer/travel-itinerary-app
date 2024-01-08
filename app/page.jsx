@@ -1,5 +1,5 @@
 import DayForm from '../components/DayForm';
-import Feed from '../components/Feed';
+import ActivityForm from '../components/ActivityForm';
 
 export default function Page() {
     return (
@@ -8,9 +8,8 @@ export default function Page() {
           <h1>So you are going to Scotland eh?</h1>
           <h2>Create your itinerary here!</h2>
         </div>
-        
         <DayForm/>
-        <Feed/>
+        <ActivityForm/>
       </div>
     )
   };
