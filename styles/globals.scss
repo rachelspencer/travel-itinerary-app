@@ -49,19 +49,33 @@ margin: 0;
 /* Day Form Styling*/
 .day-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap:2%
 }
 
 .day-form-input {
     @extend .btn-input-base-styling;
+    text-align: center;
+    width: calc(100% / 4);
 }
 
 .day-form-btn {
     @extend .btn-input-base-styling;
-    width: calc(100% / 3);
+    flex: 1;
 }
 
-.day-card {
+/* DayForm Responsive Styling*/
+@media screen and (max-width: 640px) {
+    .day-form {
+        flex-direction: column;
+    }
+
+    .day-form-btn {
+        width: calc(100% / 4);
+    }
+  }
+
+  .day-card {
     display: flex;
 }
