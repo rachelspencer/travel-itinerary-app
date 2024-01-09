@@ -6,3 +6,12 @@
     border: 2px solid black;
     box-sizing: border-box;
 }
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
+    gap:2%;
+}
