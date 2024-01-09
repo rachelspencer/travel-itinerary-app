@@ -79,19 +79,19 @@ margin: 0;
     flex-wrap: wrap;
 }
 
-.activity-input-short-text {
+.small-text-input {
     @extend .btn-input-base-styling;
     // min-width: 300px;
     flex-basis:content;
 }
 
-.activity-input-long-text {
+.large-text-input {
     @extend .btn-input-base-styling;
     // min-width: 300px;
     // min-height: 300px;
 }
 
-.activity-form-price {
+.price-input {
     @extend .btn-input-base-styling;
     // min-width: 150px;
 }
