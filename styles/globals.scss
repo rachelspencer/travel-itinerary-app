@@ -75,14 +75,29 @@ margin: 0;
 
 .activity-form {
     @extend .form;
- }
+    min-width: 100px;
+    flex-wrap: wrap;
+}
 
- .activity-form-input {
+.activity-input-short-text {
     @extend .btn-input-base-styling;
- }
+    // min-width: 300px;
+    flex-basis:content;
+}
 
- @media screen and (max-width: 640px) {
-    .activity-form {
-        flex-direction: column;
-    }
-  }
+.activity-input-long-text {
+    @extend .btn-input-base-styling;
+    // min-width: 300px;
+    // min-height: 300px;
+}
+
+.activity-form-price {
+    @extend .btn-input-base-styling;
+    // min-width: 150px;
+}
+
+// @media screen and (max-width: 640px) {
+// .activity-form {
+//     flex-direction: column;
+//     }
+// }
