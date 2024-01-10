@@ -1,10 +1,10 @@
 .btn-input-base-styling {
-    // width: calc(100% / 3);
     margin: 3% 0;
     padding: 3%;
     border-radius: 30px;
     border: 2px solid black;
     box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
 }
 
 .form {
@@ -13,4 +13,5 @@
     align-items: center;
     max-width: 500px;
     gap:2%;
+    font-family: 'Crimson Text', serif;
 }

@@ -39,10 +39,12 @@ margin: 0;
 .header-text {
     margin-left: 12px;
     flex: 1 1 auto;
+    font-family: 'Crimson Text', serif;
 }
 
 .intro-text {
     text-align: center;
+    font-family: 'Crimson Text', serif;
 }
 
 /* Day Form Styling*/
@@ -76,24 +78,23 @@ margin: 0;
 .activity-form {
     @extend .form;
     min-width: 100px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:flex-start;
 }
 
 .small-text-input {
     @extend .btn-input-base-styling;
-    // min-width: 300px;
-    flex-basis:content;
+    width: 100%;
 }
 
 .large-text-input {
     @extend .btn-input-base-styling;
-    // min-width: 300px;
-    // min-height: 300px;
+    width: 100%;
+    min-height: 200px;
 }
 
 .price-input {
     @extend .btn-input-base-styling;
-    // min-width: 150px;
 }
 
 // .activity.label {

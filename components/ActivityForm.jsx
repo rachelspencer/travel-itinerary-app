@@ -1,6 +1,6 @@
 const ActivityForm = () => {
     return (
-        <section className="activity-form">
+        <section>
             <h3>Add an activity</h3>
             <form className="activity-form">
                 <label htmlFor="activity-title" className="activity-label">Title</label>
@@ -10,7 +10,7 @@ const ActivityForm = () => {
                 name="activity-title"
                 ></input>
                 <label htmlFor="activity-address" className="activity-label">Address</label>
-                <input className="activity-input-short-text"
+                <input className="small-text-input"
                 type="text"
                 id="activity-address"
                 name="activity-address"
@@ -21,7 +21,7 @@ const ActivityForm = () => {
                 id="activity-info"
                 name="activity-info"
                 ></input>
-                <label htmlFor="activity-price" className="activity-label">Price</label>
+                <label htmlFor="activity-price">Price £</label>
                 <input className="price-input"
                 type="number"
                 id="activity-price"
