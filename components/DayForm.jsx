@@ -13,6 +13,7 @@ const DayForm = () => {
         event.preventDefault();
 
         console.log(day)
+        setDay("")
     };
 
     return(
