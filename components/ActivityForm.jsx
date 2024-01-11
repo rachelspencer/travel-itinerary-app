@@ -16,11 +16,13 @@ const ActivityForm = () => {
                 name="activity-address"
                 ></input>
                 <label htmlFor="activity-info" className="activity-label">Info</label>
-                <input className="large-text-input"
+                <textarea className="large-text-input"
                 type="text"
                 id="activity-info"
                 name="activity-info"
-                ></input>
+                cols="20"
+                rows="5"
+                ></textarea>
                 <label htmlFor="activity-price">Price £</label>
                 <input className="price-input"
                 type="number"
