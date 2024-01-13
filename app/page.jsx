@@ -1,5 +1,6 @@
 import DayForm from '../components/DayForm';
 import ActivityForm from '../components/ActivityForm';
+import ActivityCard from '../components/ActivityCard';
 
 export default function Page() {
     return (
@@ -10,6 +11,7 @@ export default function Page() {
         </div>
         <DayForm/>
         <ActivityForm/>
+        <ActivityCard/>
       </div>
     )
   };

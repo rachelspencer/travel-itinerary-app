@@ -73,7 +73,7 @@ margin: 0;
         width: calc(100% / 4);
     }
   }
-/* Activity Card Styles */
+/* Activity Form Styles */
 
 .activity-form {
     @extend .form;
@@ -98,12 +98,9 @@ margin: 0;
     width: 50%;
 }
 
-// .activity.label {
-
-// }
-
-// @media screen and (max-width: 640px) {
-// .activity-form {
-//     flex-direction: column;
-//     }
-// }
+/* Activity Card Styles */
+.activity-card {
+    @extend .form;
+    background: #5D9FFF;
+    min-height: 200px;
+}
