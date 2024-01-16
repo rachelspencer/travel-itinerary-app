@@ -98,6 +98,14 @@ margin: 0;
     width: 50%;
 }
 
+/* Day Card Styles */
+.day-card {
+    @extend .form;
+    background: #5D9FFF;
+    min-height: 200px;
+}
+
+
 /* Activity Card Styles */
 .activity-card {
     @extend .form;
