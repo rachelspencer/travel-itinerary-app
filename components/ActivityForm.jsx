@@ -21,13 +21,10 @@ const ActivityForm = ({ activityData, onSubmit, daysArray }) => {
         
         // call addDay() from Page component and pass in form data + day number
         onSubmit({
-            number: dayNumber,
-            activities: [ 
-                daysArray.title,
-                daysArray.address,
-                daysArray.info,
-                daysArray.price,
-            ]
+            number: "9",
+            activities: {
+                activity
+            }
         });
 
         setActivity({ 

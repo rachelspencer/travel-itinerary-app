@@ -22,9 +22,9 @@ const DayCard = ({ activity, daysArray, onFormSubmit }) => {
             {/* <button onClick={handleEditClick}>Edit</button> */}
             {/* <button>Delete</button> */}
             
-            {!showForm && <ActivityCard activity={activity}/>}
+            {!showForm && <ActivityCard activityData={activity}/>}
             {!showForm  ? <button className='add-activity-btn' onClick={handleAddClick}>Add Activity</button> : null}
-            {showForm && <ActivityForm onSubmit={onFormSubmit} daysArray={daysArray}/>}
+            {showForm && <ActivityForm onSubmit={onFormSubmit} activityData={activity} daysArray={daysArray}/>}
         </section>
     )
 };

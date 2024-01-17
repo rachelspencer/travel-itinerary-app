@@ -1,4 +1,6 @@
 "use client"
+
+import { useState } from 'react'
 import DayCard from '../components/DayCard';
 
 const sampleActivity = {
@@ -16,7 +18,7 @@ const sampleDaysArray = [
   }
 ]
 export default function Page() {
-    // store days in state here (array)
+    const [ day, setDay ] = useState("")
 
 
     const addDay = (formData) => {
