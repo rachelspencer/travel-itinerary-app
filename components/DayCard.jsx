@@ -25,6 +25,8 @@ const DayCard = ({ activity }) => {
                 <>
                     <h3>{activity.title}</h3>
                     <p>{activity.address}</p>
+                    <p>{activity.info}</p>
+                    <p>{activity.price}</p>
                 </>
             )}
             {showForm && <ActivityForm activity={activity} />}
