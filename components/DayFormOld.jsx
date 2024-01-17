@@ -1,8 +1,8 @@
 "use client"
 
-import React,  { useState } from 'react';
+import { useState } from 'react';
 
-const DayForm = () => {
+const DayFormOld = () => {
     const [ day, setDay ] = useState("")
 
     const handleDay = (event) => {
@@ -34,4 +34,4 @@ const DayForm = () => {
     )
 };
 
-export default DayForm;
+export default DayFormOld;

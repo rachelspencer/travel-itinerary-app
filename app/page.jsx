@@ -1,19 +1,22 @@
-import DayForm from '../components/DayForm';
-import ActivityForm from '../components/ActivityForm';
 import DayCard from '../components/DayCard';
-import ActivityCard from '../components/ActivityCard';
 
+const sampleActivity = {
+  title: 'some title',
+  address: 'some address',
+  info: 'some info', 
+  price: 25,
+};
 export default function Page() {
+    //fetch activites from backend
+
     return (
       <div>
         <div className='intro-text'>
           <h1>So you are going to Scotland eh?</h1>
           <h2>Create your itinerary here!</h2>
         </div>
-        {/* <DayForm/>
-        <ActivityForm/> */}
-        <DayCard/>
-        {/* <ActivityCard/> */}
+        {/* {activities.map(activity => <DayCard activity={activity} />)} */}
+        <DayCard activity={sampleActivity}/>
       </div>
     )
   };

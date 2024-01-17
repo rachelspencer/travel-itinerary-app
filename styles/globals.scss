@@ -101,6 +101,7 @@ margin: 0;
 /* Day Card Styles */
 .day-card {
     @extend .form;
+    flex-direction: column;
     background: #5D9FFF;
     min-height: 200px;
 }
