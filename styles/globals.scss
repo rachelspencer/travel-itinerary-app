@@ -104,12 +104,24 @@ margin: 0;
     flex-direction: column;
     background: #5D9FFF;
     min-height: 200px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
+.add-activity-btn {
+    @extend .btn-input-base-styling;
+}
 
 /* Activity Card Styles */
 .activity-card {
     @extend .form;
-    background: #5D9FFF;
+    flex-direction: column;
+    background: white;
     min-height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.activity-edit-btn {
+    @extend .btn-input-base-styling;
 }
