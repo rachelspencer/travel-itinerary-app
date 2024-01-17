@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react';
+import ActivityCard from './ActivityCard';
 import ActivityForm from "./ActivityForm";
 
 const DayCard = ({ activity }) => {
@@ -21,14 +22,7 @@ const DayCard = ({ activity }) => {
             <button onClick={handleEditClick}>Edit</button>
             {/* <button>Delete</button> */}
             <button onClick={handleAddClick}>Add Activity</button>
-            {!showForm && (
-                <>
-                    <h3>{activity.title}</h3>
-                    <p>{activity.address}</p>
-                    <p>{activity.info}</p>
-                    <p>{activity.price}</p>
-                </>
-            )}
+            {!showForm && <ActivityCard activity={activity}/>}
             {showForm && <ActivityForm activity={activity} />}
         </section>
     )
