@@ -1,10 +1,10 @@
 import DayCard from '../components/DayCard';
 
 const sampleActivity = {
-  title: 'some title',
-  address: 'some address',
-  info: 'some info', 
-  price: 25,
+  title: 'Take the Ferry from Mallaig',
+  address: 'Ferry Terminal, Mallaig PH41 4QD, UK',
+  info: 'If you’ve been visiting staying in Fort William for Ben Nevis, or even the Harry Potter Train, you can get the ferry from Mallaig to the Isle of Skye. It runs twice daily and docks at Armadale.', 
+  price: 4-6,
 };
 export default function Page() {
     //fetch activites from backend
