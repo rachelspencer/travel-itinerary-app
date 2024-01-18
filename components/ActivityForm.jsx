@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const ActivityForm = ({ activityData, onSubmit, daysArray }) => {
+const ActivityForm = ({  onSubmit, onClose, activityData, daysArray }) => {
     const dayNumber = daysArray.number;
     const [ activity, setActivity ] = useState({
         title: "",
@@ -33,6 +33,8 @@ const ActivityForm = ({ activityData, onSubmit, daysArray }) => {
             info: "",
             price: "",
         })
+
+        onClose();
     };
 
     useEffect(() => {
