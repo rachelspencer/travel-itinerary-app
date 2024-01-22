@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState } from 'react';
 import DayCard from '../components/DayCard';
 
 const sampleActivity = {
@@ -9,6 +9,7 @@ const sampleActivity = {
   info: 'If you’ve been visiting staying in Fort William for Ben Nevis, or even the Harry Potter Train, you can get the ferry from Mallaig to the Isle of Skye. It runs twice daily and docks at Armadale.', 
   price: 6,
 };
+
 const sampleDaysArray = [
   {
     number: 1,
@@ -16,23 +17,38 @@ const sampleDaysArray = [
       sampleActivity,
     ]
   }
-]
+];
+
 export default function Page() {
-    const [ day, setDay ] = useState("")
+  const [ days, setDays ] = useState(sampleDaysArray);
+ 
+  const handleAddDay = () => {
+    let dayNum = 1;
 
+     if (days.length) {
+      const lastDayNum = days[days.length - 1].number;
+      dayNum = lastDayNum + 1
+     }
+    setDays([...days,  {
+      number: dayNum,
+      activities: [],
+    }]);
+  };
 
-    const addDay = (formData) => {
-      console.log(formData);
-      // call backend with formData (can be a separate function in another file that calls backend)
-    }
+  const renderDays = () => days.map((day, index) => {
+    return <DayCard day={day} key={index} />;
+  })
+
+  console.log("days state array", days)
     return (
       <div>
         <div className='intro-text'>
           <h1>So you are going to Scotland eh?</h1>
           <h2>Create your itinerary here!</h2>
         </div>
-        {/* {days.map(day => <DayCard day={day} />)} */}
-        <DayCard activity={sampleActivity} onFormSubmit={addDay} daysArray={sampleDaysArray}/>
+        {/* <DayCard day={days} activity={sampleActivity} onFormSubmit={addDay} daysArray={sampleDaysArray}/> */}
+        <div>{renderDays()}</div>
+        <button className='add-day-btn' onClick={handleAddDay}>Add Day</button>
       </div>
     )
   };

@@ -47,6 +47,10 @@ margin: 0;
     font-family: 'Crimson Text', serif;
 }
 
+.add-day-btn {
+    @extend .btn-input-base-styling;
+}
+
 /* Day Form Styling*/
 .day-form {
     @extend .form;

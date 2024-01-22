@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 const ActivityForm = ({  onSubmit, onClose, activityData, daysArray }) => {
-    const dayNumber = daysArray.number;
+    // const dayNumber = daysArray.number;
     const [ activity, setActivity ] = useState({
         title: "",
         address: "",
@@ -21,9 +21,9 @@ const ActivityForm = ({  onSubmit, onClose, activityData, daysArray }) => {
         
         // call addDay() from Page component and pass in form data + day number
         onSubmit({
-            number: "9",
+            number: "",
             activities: {
-                activity
+                setActivity
             }
         });
 
