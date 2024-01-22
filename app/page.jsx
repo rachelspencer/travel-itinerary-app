@@ -35,11 +35,28 @@ export default function Page() {
     }]);
   };
 
+  const handleAddActivity = (dayNum, newActivity) => {
+    console.log('newActivity', newActivity);
+    const daysState = [...days];
+    console.log('daysState', daysState);
+    const dayToUpdateIndex = daysState.findIndex((day) => day.number === dayNum);
+    const dayToUpdate = daysState[dayToUpdateIndex];
+    console.log('dayToUpdate', dayToUpdate);
+    console.log('dayToUpdateIndex', dayToUpdateIndex);
+    // const updatedDaysState = daysState.splice(dayToUpdateIndex, 1, {
+    //   number: 4,
+    //   activities: [newActivity]
+    // });
+    daysState[dayToUpdateIndex] = {...dayToUpdate, activities: [...dayToUpdate.activities, newActivity]};
+
+    // console.log("updatedDaysState", updatedDaysState);
+    setDays(daysState);
+  };
+
   const renderDays = () => days.map((day, index) => {
-    return <DayCard day={day} key={index} />;
+    return <DayCard day={day} key={index} handleAddActivity={handleAddActivity}/>;
   })
 
-  console.log("days state array", days)
     return (
       <div>
         <div className='intro-text'>
