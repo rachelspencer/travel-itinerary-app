@@ -82,7 +82,7 @@ margin: 0;
 
 .activity-form {
     @extend .form;
-    min-width: 100px;
+    min-width: 250px;
     flex-direction: column;
     align-items:flex-start;
 }
