@@ -16,7 +16,9 @@ const ActivityCard = ({ activity }) => {
             <p>{activity.address}</p>
             <p>{activity.info}</p>
             <p>£{activity.price}</p>
-            <button className='activity-edit-btn' onClick={handleEditClick}>Edit</button>
+            <div>
+                <button className='activity-edit-btn' onClick={handleEditClick}>Edit</button>
+            </div>
             {/* {!showForm && <ActivityForm activity={activity} />} */}
         </section>
     )
