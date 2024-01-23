@@ -51,32 +51,33 @@ margin: 0;
     @extend .btn-input-base-styling;
 }
 
-/* Day Form Styling*/
-.day-form {
-    @extend .form;
-}
+/* Day Form Old Styling*/
+// .day-form {
+//     @extend .form;
+// }
 
-.day-form-input {
-    @extend .btn-input-base-styling;
-    text-align: center;
-    width: calc(100% / 4);
-}
+// .day-form-input {
+//     @extend .btn-input-base-styling;
+//     text-align: center;
+//     width: calc(100% / 4);
+// }
 
-.day-form-btn {
-    @extend .btn-input-base-styling;
-    flex: 1;
-}
+// .day-form-btn {
+//     @extend .btn-input-base-styling;
+//     flex: 1;
+// }
 
-/* DayForm Responsive Styling*/
-@media screen and (max-width: 640px) {
-    .day-form {
-        flex-direction: column;
-    }
+/* Day Form Old Responsive Styling*/
+// @media screen and (max-width: 640px) {
+//     .day-form {
+//         flex-direction: column;
+//     }
 
-    .day-form-btn {
-        width: calc(100% / 4);
-    }
-  }
+//     .day-form-btn {
+//         width: calc(100% / 4);
+//     }
+//   }
+
 /* Activity Form Styles */
 
 .activity-form {
@@ -110,6 +111,7 @@ margin: 0;
     min-height: 200px;
     border-radius: 5px;
     padding: 10px;
+    margin:10px
 }
 
 .add-activity-btn {
