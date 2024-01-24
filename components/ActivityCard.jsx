@@ -12,13 +12,15 @@ const ActivityCard = ({ activity }) => {
 
     return (
         <section className='activity-card'>
+            <div className='activity-card-btns'>
+                <button className='activity-edit-delete-btn' onClick={handleEditClick}>Edit</button>
+                <button className='activity-edit-delete-btn' onClick={handleEditClick}>Delete</button>
+            </div>
             <h3>{activity.title}</h3>
             <p>{activity.address}</p>
             <p>{activity.info}</p>
             <p>£{activity.price}</p>
-            <div>
-                <button className='activity-edit-btn' onClick={handleEditClick}>Edit</button>
-            </div>
+            
             {/* {!showForm && <ActivityForm activity={activity} />} */}
         </section>
     )

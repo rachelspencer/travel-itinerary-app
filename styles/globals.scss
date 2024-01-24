@@ -87,6 +87,17 @@ margin: 0;
     align-items:flex-start;
 }
 
+.activity-card-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+.activity-edit-delete-btn {
+    @extend .btn-input-base-styling;
+    margin: 0;
+    min-width: 85px;
+    margin-left: 5px;
+}
+
 .small-text-input {
     @extend .btn-input-base-styling;
     width: 100%;
@@ -101,11 +112,6 @@ margin: 0;
 .price-input {
     @extend .btn-input-base-styling;
     width: 50%;
-}
-
-.activity-edit-btn {
-    @extend .btn-input-base-styling;
-    min-width: 85px;
 }
 
 /* Day Card Styles */
