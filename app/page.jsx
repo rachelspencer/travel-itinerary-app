@@ -6,7 +6,7 @@ import { useState } from 'react';
 import DayCard from '../components/DayCard';
 
 const sampleActivity = {
-  title: 'Take the Ferry',
+  title: 'The Ferry',
   address: 'Ferry Terminal, Mallaig PH41 4QD, UK',
   info: 'If you’ve been visiting staying in Fort William for Ben Nevis, or even the Harry Potter Train, you can get the ferry from Mallaig to the Isle of Skye. It runs twice daily and docks at Armadale.', 
   price: 6,
