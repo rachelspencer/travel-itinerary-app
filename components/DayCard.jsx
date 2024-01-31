@@ -21,7 +21,7 @@ const DayCard = ({ onFormSubmit, day, handleAddActivity }) => {
     // };
 
     const renderActivities = () => {
-       return day.activities.map((activity) => <ActivityCard activity={activity} />)
+       return day.activities.map((activity) => <ActivityCard activity={activity} key={activity.dayNum} />)
     };
 
     return (
